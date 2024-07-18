@@ -1,24 +1,26 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+#  Transform code test
 
 * Ruby version
+ruby 3.1.2
 
-* System dependencies
+* Rails version
+Rails 7.1.3.4
 
-* Configuration
+## Getting Started
 
-* Database creation
+Clone the repository, and follow these steps in order.
+The instructions assume you have the correct version of ruby installed on your machine. If not, please install all this first.
 
-* Database initialization
+**1. Pre-requirements**
 
-* How to run the test suite
+* `bundle install`
 
-* Services (job queues, cache servers, search engines, etc.)
+**2. Run the app locally**
 
-* Deployment instructions
+Once all the above is done, you should be able to run the application as follows:
 
-* ...
+`rails server`
+
+**3. Tests**
+
+To run the test suite, run `bundle exec rspec`.
