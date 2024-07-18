@@ -11,17 +11,17 @@
     <% @arrivals.each do |arrival| %>
       <tr>
         <td>
-          <%= arrival.line_name %>
+          <span class="tag <%= arrival.line_id %>"><%= arrival.line_name %></span>
           <%= arrival.destination %>
         </td>
         <td>
           <%= arrival.platform %>
         </td>
         <td>
-          <%= arrival.time_to_station %>
+          <%= format_as_pending_time(arrival.time_to_station) %>
         </td>
         <td>
-          <%= arrival.time_to_station %>
+          <%= format_as_time(arrival.time_to_station) %>
         </td>
       </tr>
     <% end %>

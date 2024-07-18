@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+td, th {
+  padding: 10px 5px
+}
+
+thead th {
+  border-bottom: solid 2px black
+}
+
+table {
+  width: 1000px;
+  margin: auto;
+}
+
+.tag {
+  border-radius: 4px;
+  padding: 2px 4px;
+  background-color: lightgray;
+  color: white;
+}
+
+.tag.circle {
+  background-color: #FFC80A;
+}
+
+.tag.hammersmith-city {
+  background-color: #F589A6;
+}
+
+.tag.metropolitan {
+  background-color: #9B0058;
+}
