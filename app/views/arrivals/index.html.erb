@@ -1,0 +1,29 @@
+<table id='arrivals'>
+  <thead>
+    <tr>
+      <th>Destination</th>
+      <th>Platform</th>
+      <th>Arriving In</th>
+      <th>Arriving At</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @arrivals.each do |arrival| %>
+      <tr>
+        <td>
+          <%= arrival.line_name %>
+          <%= arrival.destination %>
+        </td>
+        <td>
+          <%= arrival.platform %>
+        </td>
+        <td>
+          <%= arrival.time_to_station %>
+        </td>
+        <td>
+          <%= arrival.time_to_station %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

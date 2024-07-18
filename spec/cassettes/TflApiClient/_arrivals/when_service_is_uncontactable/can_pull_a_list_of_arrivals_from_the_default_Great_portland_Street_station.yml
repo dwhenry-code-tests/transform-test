@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tfl.gov.uk//StopPoint/940GZZLUGPS/Arrivals
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 18 Jul 2024 18:30:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '243'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - must-revalidate, max-age=60, s-maxage=60
+      Pragma:
+      - no-cache
+      Via:
+      - 1.1 varnish
+      Expires:
+      - "-1"
+      Age:
+      - '0'
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Backend:
+      - api
+      X-Cache:
+      - MISS
+      X-Host:
+      - api.digital.tfl.gov.uk
+      X-No-Smaxage:
+      - 'true'
+      X-Proxy-Connection:
+      - unset
+      X-Request-404:
+      - 'true'
+      X-Ttl-Rule:
+      - '007'
+      X-Varnish:
+      - '2345041345'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Operation:
+      - StopPoint_ArrivalsByPathId
+      X-Api:
+      - StopPoint
+      Cf-Cache-Status:
+      - DYNAMIC
+      Strict-Transport-Security:
+      - max-age=31536000
+      Set-Cookie:
+      - _cfuvid=mxaNO3eg6iBJwk8MTxpYOiALqevZ1NobvxtFHH448HI-1721327450102-0.0.1.1-604800000;
+        path=/; domain=.tfl.gov.uk; HttpOnly; Secure; SameSite=None
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8a548b9299056383-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"$type":"Tfl.Api.Presentation.Entities.ApiError, Tfl.Api.Presentation.Entities","timestampUtc":"2024-07-18T18:30:46.9572456Z","exceptionType":"EntityNotFoundException","httpStatusCode":404,"httpStatus":"NotFound","relativeUri":"/StopPoint/940GZZLUGPS11/Arrivals","message":"The
+        following stop point is not recognised: 940GZZLUGPS11"}'
+  recorded_at: Thu, 18 Jul 2024 18:30:50 GMT
+recorded_with: VCR 6.2.0
