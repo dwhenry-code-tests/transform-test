@@ -25,3 +25,7 @@ So I have set the route endpoint to point to the main page so that it is easy fo
 
 Using activemodel here as it help with teh heavy lifting of building the class and setting types on the incoming fields
 
+# Improved UI
+
+Due to running out of time teh UI improvements as a whole lack test coverage this was a choice I made due to running out of time to complete the task in the allocated time.
+Ideally these would all be fully tested.
