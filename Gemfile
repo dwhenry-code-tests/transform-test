@@ -3,6 +3,7 @@ source "https://rubygems.org"
 ruby "3.1.2"
 
 gem "bootsnap", require: false
+gem 'httparty'
 gem "importmap-rails"
 gem "jbuilder"
 gem "puma", ">= 5.0"
