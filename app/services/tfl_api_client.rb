@@ -10,7 +10,7 @@ class TflApiClient
 
     case response.code
     when 200
-      JSON.parse(response.body).map { Arrival.new(_1) }
+      JSON.parse(response.body).map { Arrival.build(_1) }
     else
       raise "Unexpected response from TFL API - status #{response.code}"
     end
